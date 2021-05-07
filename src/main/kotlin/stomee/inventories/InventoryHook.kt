@@ -13,7 +13,7 @@ fun hook(player: Player) {
 
         entity.setInstance(player.instance!!, player.position)
 
-        entity.setPickupDelay(2, TimeUnit.SECOND)
+        entity.setPickupDelay(30, TimeUnit.TICK)
 
         entity.velocity.add(player.position.direction.clone().normalize().multiply(6))
     }
