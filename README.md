@@ -1,5 +1,5 @@
-# ExampleExtension
-An example extension for Minestom based off of Sabre/kotlin libs.
+# Inventories
+Handles all inventory containers and events for stomee.
 
 ## Installation
 
