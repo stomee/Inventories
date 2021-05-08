@@ -9,9 +9,12 @@ import world.cepi.kstom.addEventCallback
 
 fun hook(player: Player) {
     player.addEventCallback<ItemDropEvent> {
-        val entity = ItemEntity(itemStack, player.position.clone().add(.0, player.eyeHeight, .0), player.instance!!)
 
-        entity.setInstance(player.instance!!, player.position)
+        val pos = player.position.clone().add(.0, player.eyeHeight, .0)
+
+        val entity = ItemEntity(itemStack, pos, player.instance!!)
+
+        entity.setInstance(player.instance!!, pos)
 
         entity.setPickupDelay(30, TimeUnit.TICK)
 
