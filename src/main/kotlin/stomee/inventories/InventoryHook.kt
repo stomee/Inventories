@@ -9,7 +9,7 @@ import world.cepi.kstom.addEventCallback
 
 fun hook(player: Player) {
     player.addEventCallback<ItemDropEvent> {
-        val entity = ItemEntity(itemStack, player.position, player.instance!!)
+        val entity = ItemEntity(itemStack, player.position.clone().add(.0, player.eyeHeight, .0), player.instance!!)
 
         entity.setInstance(player.instance!!, player.position)
 
