@@ -1,6 +1,7 @@
 package stomee.inventories
 
 import net.minestom.server.extensions.Extension
+import stomee.inventories.scraper.RecipeScraper
 import world.cepi.kstom.Manager
 
 class Inventories : Extension() {
@@ -8,6 +9,8 @@ class Inventories : Extension() {
     override fun initialize() {
 
         Manager.connection.addPlayerInitialization(::hook)
+
+//        RecipeScraper.init()
 
         logger.info("[Inventories] has been enabled!")
     }

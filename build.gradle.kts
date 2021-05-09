@@ -47,6 +47,9 @@ dependencies {
 
     // add KStom
     compileOnly("com.github.Project-Cepi:KStom:62ae2ba71f")
+
+    // org.json
+    compileOnly("org.json", "json", "20200518")
 }
 tasks.withType<Test> {
     useJUnitPlatform()
