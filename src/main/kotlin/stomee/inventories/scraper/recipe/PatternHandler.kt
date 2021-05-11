@@ -1,4 +1,4 @@
-package stomee.inventories.scraper
+package stomee.inventories.scraper.recipe
 
 import net.minestom.server.item.ItemStack
 import net.minestom.server.item.Material

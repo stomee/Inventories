@@ -1,4 +1,4 @@
-package stomee.inventories.scraper
+package stomee.inventories.scraper.recipe
 
 enum class RecipeType {
 

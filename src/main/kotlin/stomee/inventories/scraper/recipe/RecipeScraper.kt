@@ -1,10 +1,9 @@
-package stomee.inventories.scraper
+package stomee.inventories.scraper.recipe
 
 import net.minestom.server.entity.Player
 import net.minestom.server.item.ItemStack
 import net.minestom.server.item.Material
 import net.minestom.server.network.packet.server.play.DeclareRecipesPacket
-import net.minestom.server.recipe.Recipe
 import net.minestom.server.recipe.ShapedRecipe
 import net.minestom.server.recipe.ShapelessRecipe
 import org.json.JSONObject
